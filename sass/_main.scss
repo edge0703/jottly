@@ -1,0 +1,301 @@
+body {
+	background: #fff;
+	@include container($break-xlarge);
+}
+
+h2 {
+	font-size: $scale2;
+
+	@include media-query(small) {
+		font-size: $scale3;
+	}
+}
+
+h3 {
+	@extend %mainfont-400;
+
+	@include media-query(small) {
+		font-size: $scale2;
+	}
+}
+
+p {
+	line-height: 1.5;;
+}
+
+button, .action-btn {
+	background: $orange;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $white;
+	text-decoration: none;
+	text-align: center;
+	@extend %mainfont-400;
+	font-size: $scale1;
+	line-height: $input-height;
+
+	&:hover, &:focus {
+		transform: scale(1.1);
+		color: $white;
+	}
+}
+
+.hidden {
+	position: absolute; left: -9999px
+}
+
+.container {
+	padding: 4em 3% 5em;
+
+	@include media-query(small) {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+
+	@media all and (min-width: 95em) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	h2 {
+		color: $blue;
+		margin-top: 0;
+	}
+}
+
+.mainheader {
+	@include posabs;
+	text-align: center;
+	@include span(full);
+	border-bottom: 3px solid rgba($black, .08);
+	padding-bottom: .8em;
+}
+
+.mainheader__logo {
+	margin: .9em 0 .7em;
+	@include media-query(small) {
+		@include span(4 first);
+		text-align: left;
+	}
+}
+
+.mainheader__mainnav {
+	font-size: $scale1;
+	margin-top: .3em;
+
+	@include media-query(small) {
+		text-align: right;
+		@include span(12 last);
+	}
+}
+
+.mainnav__item {
+	display: inline-block;
+	margin: 0 .3em;
+	vertical-align: middle;
+
+	a {
+		display: inline-block;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 50%; top: 100%;
+			transform: translate(-50%, 0);
+			height: 2px;
+			background: $black;
+			width: 0;
+			transition: width .3s;
+		}
+
+		&:hover, &:focus {
+			&:before {
+				width: 100%;
+			}
+
+			.no-transform & {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.mainnav__item__special {
+	background: $orange;
+	margin: .2em 0;
+
+	a {
+		color: $white;
+		padding: .2em .5em;
+
+		&:before {
+			top: 94%;
+			background: mix($black, $orange, 40%);
+		}
+	}
+}
+
+.mainarea {
+	margin-top: 8.6em;
+
+	@include media-query(small) {
+		margin-top: 6em;
+	}
+}
+
+.hero {
+	@include span(full);
+	text-align: center;
+	padding-bottom: 3em;
+}
+
+.hero__main {
+	font-size: $scale3;
+	line-height: 1.2;
+	margin: 0;
+
+	@include media-query(medium) {
+		font-size: $scale5;
+	}
+}
+
+.hero__tagline {
+	font-size: $scale1;
+	margin-top: .8em;
+	padding-top: 1.3em;
+	position: relative;
+
+	&:before {
+		// Add blue line, which is 74% the width of the tagline
+		$width: 74;
+		content: "";
+		position: absolute;
+		left: 0; top: 0;
+		height: 4px;
+		width: percent($width);
+		margin-left: percent((100 - $width) / 2);
+		background: $blue;
+	}
+}
+
+.hero__action {
+	display: block;
+	line-height: 3em;
+	margin-top: .7em;
+	margin-bottom: 5em;
+	@include span(full);
+
+	&:visited {
+		color: $white;
+	}
+
+	@include media-query(small) {
+		@include span(6 no-gutters);
+		@include push(5 of 16);
+	}
+
+	@include media-query(medium) {
+		@include span(4 no-gutters);
+		@include push(6 of 16);
+	}
+}
+
+.hero__screenshot {
+	@include span(full);
+	text-align: center;
+}
+
+.features {
+	@include break;
+	background: #E6E6E6;
+	background-image: radial-gradient(50% 175%, rgba(255,255,255,0.61) 50%, rgba(255,255,255,0.00) 100%);
+	padding-top: 2.8em;
+	padding-bottom: 1.4em;
+}
+
+.features__list {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+}
+
+.features__item {
+	display: inline-block;
+	vertical-align: top;
+
+	@include media-query(medium) {
+		width: 30%;
+	}
+}
+
+.features__img {
+	display: inline-block;
+	max-width: 3em;
+	height: 3em;
+	margin-right: .4em;
+	vertical-align: middle;
+
+	@include media-query(medium) {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.features__title {
+	color: $blue;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.features__text {
+	margin: .4em 0 1.9em;
+	max-width: 20em
+}
+
+.works__features {
+	color: $blue;
+	list-style: none;
+	margin-top: 0;
+	// counter-reset: li;
+}
+
+.works__item {
+	margin-top: 1.6em;
+	position: relative;
+	// padding-left: 1.4em;
+
+	&:before {
+		// content: counter(li);
+		// counter-increment: li;
+		// @include posabs;
+		display: inline-block;
+		// background: inline-image('svg/tmp/');
+	}
+}
+
+// Custom validation error message
+.ws-po-box {
+	background: red;
+	border-color: red;
+	color: #fff;
+}
+
+.ws-po-arrow {
+	border-bottom-color: red;
+
+	.ws-po-arrowbox {
+		border-bottom-color: inherit;
+	}
+}
+
+// Mark of input fields
+.user-error {
+	border: 1px solid red;
+}
+
+.user-success {
+	border: 1px solid green;
+}

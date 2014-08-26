@@ -1,0 +1,45 @@
+// susy: comment in if needed (see http://susydocs.oddbird.net/en/latest/settings)
+$susy: (
+	columns: 16,
+	gutters: 1/3,
+	math: fluid,
+	output: float,
+	gutter-position: after
+);
+
+// fonts
+$fallbackfont-main: Arial, Helvetica, sans-serif, sans-serif;
+$fallbackfont-title: Garamond, "Times New Roman", serif;
+$titlefont: 'Lora', $fallbackfont-title;
+$mainfont: 'Merriweather Sans', $fallbackfont-main;
+
+// sizes
+// $base-size: 10px;
+
+// typographic scale
+$scale6: 4.5em; // 72
+$scale5: 3.75em; // 60
+$scale4: 3em; // 48
+$scale3: 2.25em; // 36
+$scale2: 1.3125em; // 24
+$scale1: 1.125em; // 18
+$scale0: 1rem; // 16
+$scale-1: 0.875em; // 14
+$scale-2: 0.75em; // 12
+$scale-3: 0.6875em; // 11
+$scale-4: 0.625em; // 10
+
+// media query breakpoints
+$break-small: 30em; // 480px
+$break-medium: 46em; // 736px
+$break-large: 60em; // 960px
+$break-xlarge: 90em; // 1440px
+
+// colors
+$black: #000;
+$white: #fff;
+$orange: #FFA900;
+$blue: #3085FF;
+
+// spacing/dimensions
+$input-height: 2em;

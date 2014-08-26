@@ -1,0 +1,16 @@
+/* Title | Christian Krammer
+Contact: E-Mail
+
+IE7 styles */
+
+img {-ms-interpolation-mode: bicubic}
+
+audio, canvas, video {display: inline; zoom: 1}
+
+legend {margin-left: -7px}
+
+button, input {overflow: visible}
+
+button, input, select, textarea {vertical-align: middle}
+
+table button, table input {overflow: auto}

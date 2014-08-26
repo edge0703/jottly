@@ -1,0 +1,171 @@
+@function convert-px($value) { // convert rem to px
+	@return $value/1rem*$rem;
+}
+
+@mixin font-face($fontName) {
+	@font-face {
+		font-family: '#{$fontName}';
+		src: url('../font/#{$fontName}.eot');
+		src: url('../font/#{$fontName}.eot?iefix') format('eot'), url('../font/#{$fontName}.ttf') format('truetype'), url('../font/#{$fontName}.woff') format('woff');
+		font-weight: normal; font-style: normal;
+	}  
+}
+
+@include font-face('Merriweather Sans');
+
+@include font-face('Lora');
+
+@include font-face('icomoon');
+
+@include font-face('AdobeBlank');
+
+@mixin media-query($breakpoint) {
+	@if $breakpoint == small {
+		@media all and (min-width: $break-small) {	
+			@content;		
+		}
+	}
+
+	@elseif $breakpoint == medium {
+		@media all and (min-width: $break-medium) {	
+			@content;		
+		}
+	}
+
+	@elseif $breakpoint == large {
+		@media all and (min-width: $break-large) {	
+			@content;		
+		}
+	}
+
+	@elseif $breakpoint == xlarge {
+		@media all and (min-width: $break-xlarge) {	
+			@content;		
+		}
+	}
+}
+
+%fontproperties {
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+%titlefont {
+	font-family: $titlefont;
+}
+
+%iconfont {
+	font-family: 'icomoon';
+	@extend %fontproperties;
+}
+
+%mainfont {
+	font-family: $mainfont;
+	font-weight: 300;
+}
+
+%mainfont-400 {
+	font-family: $mainfont;
+	font-weight: 400;
+}
+
+%blankfont {
+	font-family: 'AdobeBlank';
+	@extend %fontproperties;
+}
+
+[data-icon]:before {
+	@extend %iconfont;
+	content: attr(data-icon);
+}
+
+%hide {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+%hide-icon {
+	 position: absolute;
+	 top: -9999px;
+	 left: -9999px;
+}
+
+%clearfix {
+	&:after, &:before {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+%center {
+	position: absolute;
+	left: 0; top: 0; bottom: 0; right: 0;
+	margin: auto;
+}
+
+@function px($size) {
+	@return ($size / 1rem) * $base-size;
+}
+
+// Mixin for absolute positioning. No parameters are required, by default the element gets aligned top and left (since both are 0 by default). You can also set the $bottom and $right values, the "content" property (for pseudo elements) and the $width and $height. For fullwidth elements it's also possible to set all four position properties ($top, $right, $bottom, $left) the same, but then $allsides needs to be set to "1".
+@mixin posabs($top: 0, $left: 0, $bottom: "", $right: "", $content: "", $width: "", $height: "", $allsides: 0) {
+	@if ($content == 1) {
+		content: "";
+	}
+	position: absolute;
+	@if ($allsides == 0) { // If bottom is set, it is assumed that top is not needed. If both are needed, use $allsides: 1.
+		@if ($bottom == "") {
+			top: $top;
+		} @else {
+			bottom: $bottom;
+		}
+		@if ($right == "") { // If right is set, it is assumed that left is not needed. If both are needed, use $allsides: 1.
+			left: $left;
+		} @else {
+			right: $right;
+		}
+	}
+	@if ($width != "") {
+		width: $width;
+	}
+	@if ($height != "") {
+		height: $height;
+	}
+	@if ($allsides == 1) {
+		@if ($top != "") {
+			top: $top;
+		}
+		@if ($right != "") {
+			right: $right;
+		}
+		@if ($bottom != "") {
+			bottom: $bottom;
+		}
+		@if ($left != "") {
+			left: $left;
+		}
+	}
+}
+
+// Converts unitless number tp percentage
+@function percent($value) {
+	@return $value * 1%;
+}
+
+// Extends within media queries need to have a separate declaration to work
+%break-medium-site {
+	@include media-query(medium) {
+		padding: 0;
+	}
+}

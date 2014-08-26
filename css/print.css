@@ -1,0 +1,91 @@
+@print {
+  /* line 2, ../sass/print.scss */
+  header *, footer, aside, nav {
+    display: none;
+  }
+
+  /* line 4, ../sass/print.scss */
+  article img {
+    display: block;
+    max-width: 500px;
+    height: auto;
+  }
+
+  /* line 10, ../sass/print.scss */
+  q {
+    quotes: none;
+  }
+
+  /* line 10, ../sass/print.scss */
+  q:before, q:after {
+    content: "";
+  }
+
+  /* line 12, ../sass/print.scss */
+  body {
+    font: 12pt Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+    background: #fff;
+    color: #000;
+  }
+
+  /* line 19, ../sass/print.scss */
+  a {
+    color: #000;
+  }
+
+  /* line 23, ../sass/print.scss */
+  h1, h2, h3, h4 {
+    line-height: 1;
+  }
+
+  /* line 25, ../sass/print.scss */
+  h1 {
+    font-size: 24pt;
+  }
+
+  /* line 27, ../sass/print.scss */
+  h2 {
+    font-size: 20pt;
+  }
+
+  /* line 29, ../sass/print.scss */
+  h3 {
+    font-size: 16pt;
+  }
+
+  /* line 31, ../sass/print.scss */
+  h4 {
+    font-size: 14pt;
+  }
+
+  /* line 33, ../sass/print.scss */
+  ul {
+    padding: 0;
+  }
+
+  /* line 37, ../sass/print.scss */
+  img {
+    margin: 5px;
+  }
+
+  /* line 41, ../sass/print.scss */
+  blockquote {
+    font-size: 14pt;
+    font-style: italic;
+  }
+
+  /* line 46, ../sass/print.scss */
+  header h1 {
+    display: block;
+    font-size: 30pt;
+    margin: 0;
+  }
+
+  /* line 52, ../sass/print.scss */
+  header:after {
+    font-style: italic;
+    content: "The site title";
+    font-size: 10pt;
+  }
+}
