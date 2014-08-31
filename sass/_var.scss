@@ -4,7 +4,8 @@ $susy: (
 	gutters: 1/3,
 	math: fluid,
 	output: float,
-	gutter-position: after
+	gutter-position: after,
+	container-position: left
 );
 
 // fonts
@@ -17,11 +18,13 @@ $mainfont: 'Merriweather Sans', $fallbackfont-main;
 // $base-size: 10px;
 
 // typographic scale
-$scale6: 4.5em; // 72
-$scale5: 3.75em; // 60
-$scale4: 3em; // 48
-$scale3: 2.25em; // 36
-$scale2: 1.3125em; // 24
+$scale7: 4.5em; // 72
+$scale6: 3.75em; // 60
+$scale5: 3em; // 48
+$scale45: 2.625em; // 48
+$scale4: 2.25em; // 36
+$scale3: 1.5em; // 24
+$scale2: 1.3125em; // 21
 $scale1: 1.125em; // 18
 $scale0: 1rem; // 16
 $scale-1: 0.875em; // 14
@@ -34,6 +37,7 @@ $break-small: 30em; // 480px
 $break-medium: 46em; // 736px
 $break-large: 60em; // 960px
 $break-xlarge: 90em; // 1440px
+$break-last: 100em; // 1600px
 
 // colors
 $black: #000;
@@ -42,4 +46,8 @@ $orange: #FFA900;
 $blue: #3085FF;
 
 // spacing/dimensions
-$input-height: 2em;
+$page-maxwidth: 1280px;
+$input-height: 3.1rem;
+$mainheader-height: 5em;
+$container-lrpadding1: 3%;
+$container-lrpadding2: 2%;

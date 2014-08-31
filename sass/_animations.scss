@@ -1,5 +1,5 @@
-// @include animation-keyframes(animation-name) {
-// 	0% {background: $color1}
-// 	50% {background: $color2}
-// 	100% {background: $color3}
-// }
+@keyframes blink {
+	50% {
+		opacity: 1;
+	}
+}

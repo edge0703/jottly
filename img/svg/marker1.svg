@@ -1,1 +1,20 @@
-<svg width="69" height="40" viewBox="0 0 69 40" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><title>1</title><desc>Created with Sketch.</desc><g id="1" fill="none" fill-rule="evenodd"><path d="M28 20h38.118" id="Line" stroke="#3788FF" stroke-width="4" stroke-linecap="square"/><path d="M22.121.908c-1.172-1.172-3.074-1.169-4.243 0l-16.971 16.971c-1.172 1.172-1.169 3.074 0 4.243l16.971 16.971c1.172 1.172 3.074 1.169 4.243 0l16.971-16.971c1.172-1.172 1.169-3.074 0-4.243l-16.971-16.971zm-1.127 24.46c0 .315-.002.614-.006.897-.004.283-.026.539-.065.767l2.03-.094v1.062h-6.16v-.802c.417-.016.761-.09 1.033-.224.271-.134.486-.319.643-.555.157-.236.267-.519.33-.85.063-.33.094-.704.094-1.121l-.024-11.411h-.047l-2.903 1.876-.484-.708 4.72-3.516h.814l.024 14.679z" id="Rectangle-20" fill="#3788FF"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="61px" height="40px" viewBox="0 0 61 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>marker1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="marker1">
+            <g id="Page-1">
+                <g id="marker1">
+                    <g id="1">
+                        <path d="M28,20 L61,20" id="Line" stroke="#3788FF" stroke-width="4"></path>
+                        <path d="M22.121,0.908 C20.949,-0.264 19.047,-0.261 17.878,0.908 L0.907,17.879 C-0.265,19.051 -0.262,20.953 0.907,22.122 L17.878,39.093 C19.05,40.265 20.952,40.262 22.121,39.093 L39.092,22.122 C40.264,20.95 40.261,19.048 39.092,17.879 L22.121,0.908 L22.121,0.908 Z" id="Rectangle-20" fill="#3788FF"></path>
+                        <path d="M20.994,25.368 C20.994,25.683 20.992,25.982 20.988,26.265 C20.984,26.548 20.962,26.804 20.923,27.032 L22.953,26.938 L22.953,28 L16.793,28 L16.793,27.198 C17.21,27.182 17.554,27.108 17.826,26.974 C18.097,26.84 18.312,26.655 18.469,26.419 C18.626,26.183 18.736,25.9 18.799,25.569 C18.862,25.239 18.893,24.865 18.893,24.448 L18.869,13.037 L18.822,13.037 L15.919,14.913 L15.435,14.205 L20.155,10.689 L20.969,10.689 L20.993,25.368 L20.994,25.368 L20.994,25.368 Z" id="Rectangle-20-path" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

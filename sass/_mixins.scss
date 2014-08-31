@@ -11,9 +11,9 @@
 	}  
 }
 
-@include font-face('Merriweather Sans');
+// @include font-face('Merriweather Sans');
 
-@include font-face('Lora');
+// @include font-face('Lora');
 
 @include font-face('icomoon');
 
@@ -43,6 +43,17 @@
 			@content;		
 		}
 	}
+
+	@elseif $breakpoint == last {
+		@media all and (min-width: $break-last) {	
+			@content;		
+		}
+	}
+}
+
+%displayfix {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 %fontproperties {
@@ -52,12 +63,12 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	@extend %displayfix;
 }
 
 %titlefont {
 	font-family: $titlefont;
+	// @extend %displayfix;
 }
 
 %iconfont {
@@ -161,6 +172,42 @@
 // Converts unitless number tp percentage
 @function percent($value) {
 	@return $value * 1%;
+}
+
+%link-hover {
+	display: inline-block;
+	position: relative;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		left: 50%; top: 100%;
+		transform: translate(-50%, 0);
+		height: 2px;
+		background: $black;
+		width: 0;
+		transition: width .3s;
+	}
+
+	&:hover, &:focus {
+		&:before {
+			width: 100%;
+		}
+
+		.no-transform & {
+			text-decoration: underline;
+		}
+	}
+}
+
+%page-maxwidth {
+	max-width: $page-maxwidth;
+	margin: 0 auto;
+}
+
+@mixin page-maxwidth {
+	max-width: $page-maxwidth;
+	margin: 0 auto;
 }
 
 // Extends within media queries need to have a separate declaration to work

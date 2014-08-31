@@ -13,13 +13,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 audio, canvas, video {display: inline-block} audio:not([controls]) {display: none; height: 0}
 
 html {
-	// @include media-query(small) {
-	// 	font-size: 12px;
-	// }
-
-	// @include media-query(xlarge) {
-	// 	font-size: 110%;
-	// }
+	@include media-query(last) {
+		font-size: 110%;
+	}
 
 	-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
 }
@@ -35,7 +31,7 @@ body, button, input, select, textarea {
 h1, h2, h4, h5, h6 {
 	line-height: 1;
 	color: #111;
-	font-family: $titlefont;
+	@extend %titlefont;
 	font-weight: normal;
 }
 
@@ -47,7 +43,7 @@ abbr[title] {border-bottom: 1px dotted} dfn {font-style: italic} ins {text-decor
 
 b, strong {font-weight: bold}
 
-img {border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; border: 0; max-width: 100%}
+img {border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; border: 0; max-width: 100%; height: auto;}
 
 svg {max-width: 100%}
 
@@ -85,6 +81,6 @@ input[type="checkbox"], input[type="radio"] {vertical-align: -2px}
 
 input[type="search"] {-webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box} input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {-webkit-appearance: none}
 
-isindex::-webkit-input-placeholder, ::-webkit-input-placeholder {color: #6d6d6d} ::-moz-placeholder, ::-ms-input-placeholder {color: #6d6d6d}
+isindex::-webkit-input-placeholder, ::-webkit-input-placeholder {color: rgba(0,0,0,.3)} ::-moz-placeholder, ::-ms-input-placeholder {color: rgba(0,0,0,.3)}
 
 textarea {overflow: auto; vertical-align: top}
