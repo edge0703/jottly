@@ -8,7 +8,7 @@ $(function() {
 		// yepnope.injectCss("css/modern.css"); // Or as an alternative with AJAX
 		$.getScript("js/modern.js", function( data, textStatus, jqxhr ) { // Additional JS for modern browsers
 			setTimeout(function(){
-			  $('body').show();
+			  $('body').css('visibility', 'visible');
 			},100); // Above function is only called after a short delay to prevent FOUC
 		});
 		$.getScript("js/svg4everybody.min.js", function( data, textStatus, jqxhr ) {});

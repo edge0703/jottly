@@ -5,7 +5,7 @@
 		<ul>
 			<li class="mainnav__item"><a href="#about">About</a></li>
 			<li class="mainnav__item"><a href="#contact">Contact us</a></li>
-			<li class="mainnav__item mainnav__item__special"><a href="#start">Get started</a></li>
+			<li class="mainnav__item mainnav__item__special"><a href="#start" class="mainnav__start">Get started</a></li>
 		</ul>
 	</nav>
 </header>

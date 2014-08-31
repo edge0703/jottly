@@ -14,5 +14,5 @@
 	<!--[if IE 7]><link rel="stylesheet" media="screen" href="stylesheets/ie7.css"/><![endif]-->	
 	<!-- <link href='http://fonts.googleapis.com/css?family=Raleway:100,700|Open+Sans:300italic,300,700' rel='stylesheet' type='text/css'>-->
 	<script src="js/modernizr.custom.27352.min.js"></script> <!-- With printshiv and yepnope (for webshim) -->
-	<script type="text/javascript">if ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window ) {document.write('<style type="text/css">body{display:none}</style>');}</script> <!-- Modern browser detection -->
+	<script type="text/javascript">if ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window ) {document.write('<style type="text/css">body{visibility:hidden}</style>');}</script> <!-- Modern browser detection -->
 </head>

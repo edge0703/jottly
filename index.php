@@ -8,7 +8,7 @@
 		<div class="container__in">
 			<h1 class="hero__main">The easier way to write and collaborate</h1>
 			<p class="hero__tagline">Edit, post and share content with your peers in a simple way.</p>
-			<a href="#" class="action-btn hero__action">Get started</a>
+			<a href="#start" class="action-btn hero__action">Get started</a>
 		</div>
 	</div>	
 
@@ -99,7 +99,7 @@
 		</div>
 	</section>
 
-	<section role="region" class="container start" aria-labelledby="start__title">
+	<section role="region" class="container start" aria-labelledby="start__title" id="start">
 		<div class="container__in">
 			<div class="container__in__in">
 				<h2 class="container__title start__title" id="start__title">Your free trial</h2>
