@@ -28,7 +28,22 @@ var scroll = {
 	},
 }
 
+var logo = {
+	init: function() {
+		logo.registerEventHandlers(); 
+		// $('#logosel').hide();
+		// document.getElementById('logosel').setAttribute('display', 'none');
+		// document.getElementById('logosel').setAttribute('display', 'none');
+		// $('#svgstore46cf7ac42ac6a1ded4f355f66645fd1bFill-1').hide();
+	},
+
+	registerEventHandlers: function() {
+		
+	},
+}
+
 $(document).ready(function() {
 	typing.init();
 	scroll.init();
+	logo.init();
 });

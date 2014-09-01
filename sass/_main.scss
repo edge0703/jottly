@@ -95,7 +95,7 @@ input[type=text], input[type=email] {
 	margin-bottom: 1em;
 	background: $white;
 	background: rgba(255,255,255,.96);
-	z-index: 1;
+	z-index: 1;	
 
 	@include media-query(small) {
 		position: fixed;
@@ -670,6 +670,11 @@ input[type=text], input[type=email] {
 
 .start__title {
 	color: $white;
+	margin-bottom: .3em;
+}
+
+.start__text {
+	margin-top: 0;
 }
 
 .formrw {

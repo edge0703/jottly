@@ -12,6 +12,9 @@ $(function() {
 			},100); // Above function is only called after a short delay to prevent FOUC
 		});
 		$.getScript("js/svg4everybody.min.js", function( data, textStatus, jqxhr ) {});
+		$.getScript("js/scrollReveal.js", function( data, textStatus, jqxhr ) {
+			window.scrollReveal = new scrollReveal();
+		});
 		// $.getScript("js/fancybox/jquery.fancybox.pack.js", function( data, textStatus, jqxhr ) { // Fancybox
 		// 	$(".fancybox").fancybox();
 		// });
