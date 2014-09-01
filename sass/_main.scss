@@ -382,6 +382,7 @@ input[type=text], input[type=email] {
 	height: 3em;
 	margin-right: .4em;
 	vertical-align: middle;
+	max-height: 100%;
 
 	@include media-query(medium) {
 		max-width: 100%;
@@ -403,7 +404,7 @@ input[type=text], input[type=email] {
 	max-width: 22em;
 
 	@include media-query(small) {
-		max-width: 17em;
+		max-width: 20em;
 		padding: 0 2em;
 	}
 
