@@ -6,14 +6,14 @@ $(function() {
 	) { // Modern browsers
 		$('head').append('<link rel="stylesheet" media="screen" href="css/modern.css"/>'); // Additional CSS for modern browsers
 		// yepnope.injectCss("css/modern.css"); // Or as an alternative with AJAX
-		$.getScript("js/modern.js", function( data, textStatus, jqxhr ) { // Additional JS for modern browsers
+		$.getScript("js/modern.min.js", function( data, textStatus, jqxhr ) { // Additional JS for modern browsers
 			setTimeout(function(){
-			  $('body').css('visibility', 'visible');
+				$('body').css('visibility', 'visible');
 			},100); // Above function is only called after a short delay to prevent FOUC
 		});
 		$.getScript("js/svg4everybody.min.js", function( data, textStatus, jqxhr ) {});
 		$.getScript("js/scrollReveal.js", function( data, textStatus, jqxhr ) {
-			window.scrollReveal = new scrollReveal();
+			if (window.innerWidth > 481) window.scrollReveal = new scrollReveal(); // To prevent sloppy animations, disable it for mobile
 		});
 		// $.getScript("js/fancybox/jquery.fancybox.pack.js", function( data, textStatus, jqxhr ) { // Fancybox
 		// 	$(".fancybox").fancybox();

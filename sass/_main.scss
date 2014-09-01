@@ -98,13 +98,16 @@ input[type=text], input[type=email] {
 	z-index: 1;	
 
 	@include media-query(small) {
-		position: fixed;
-		top: 0;
-		left: 0;
+		position: absolute;
+		left: 0; top: 0;
 		margin: 0;
 		padding: 0;
 		line-height: $mainheader-height;
 		vertical-align: middle;
+	}
+
+	@include media-query(medium) {
+		position: fixed;
 	}
 }
 
@@ -248,7 +251,7 @@ input[type=text], input[type=email] {
 	}
 
 	@include media-query(small) {
-		max-width: 80%;
+		max-width: 81%;
 	}
 
 	@include media-query(medium) {
