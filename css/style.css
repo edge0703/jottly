@@ -472,66 +472,61 @@ input[type=text], input[type=email] {
   height: 3.1rem;
   padding: 0 .6em;
   width: 100%;
+  border-radius: 0;
 }
-/* line 42, ../sass/_main.scss */
+/* line 43, ../sass/_main.scss */
 input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[type=email]:active {
   outline: 0;
   opacity: .9;
 }
 
-/* line 48, ../sass/_main.scss */
+/* line 49, ../sass/_main.scss */
 .hidden {
   position: absolute;
   left: -9999px;
 }
 
 /* Container settings */
-/* line 53, ../sass/_main.scss */
+/* line 54, ../sass/_main.scss */
 .container {
   padding: 2.4em 3%;
 }
 @media all and (min-width: 30em) {
-  /* line 53, ../sass/_main.scss */
+  /* line 54, ../sass/_main.scss */
   .container {
     padding-left: 2%;
     padding-right: 2%;
   }
 }
 @media all and (min-width: 60em) {
-  /* line 53, ../sass/_main.scss */
+  /* line 54, ../sass/_main.scss */
   .container {
     padding: 4.6em 2% 5.4em;
   }
 }
 @media all and (min-width: 90em) {
-  /* line 53, ../sass/_main.scss */
+  /* line 54, ../sass/_main.scss */
   .container {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 75, ../sass/_main.scss */
+/* line 76, ../sass/_main.scss */
 .container__title {
   color: #3085ff;
   margin: 0 0 .8em;
-  font-size: 1.3125em;
-}
-@media all and (min-width: 30em) {
-  /* line 75, ../sass/_main.scss */
-  .container__title {
-    font-size: 1.5em;
-  }
+  font-size: 1.5em;
 }
 @media all and (min-width: 60em) {
-  /* line 75, ../sass/_main.scss */
+  /* line 76, ../sass/_main.scss */
   .container__title {
     font-size: 2.625em;
   }
 }
 
 /* Main header */
-/* line 90, ../sass/_main.scss */
+/* line 87, ../sass/_main.scss */
 .mainheader {
   text-align: center;
   width: 100%;
@@ -546,7 +541,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   z-index: 1;
 }
 @media all and (min-width: 30em) {
-  /* line 90, ../sass/_main.scss */
+  /* line 87, ../sass/_main.scss */
   .mainheader {
     position: absolute;
     left: 0;
@@ -558,18 +553,18 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 46em) {
-  /* line 90, ../sass/_main.scss */
+  /* line 87, ../sass/_main.scss */
   .mainheader {
     position: fixed;
   }
 }
 
-/* line 114, ../sass/_main.scss */
+/* line 111, ../sass/_main.scss */
 .mainheader__logo {
   margin: .9em 0 .5em;
 }
 @media all and (min-width: 30em) {
-  /* line 114, ../sass/_main.scss */
+  /* line 111, ../sass/_main.scss */
   .mainheader__logo {
     width: 30.15873%;
     float: left;
@@ -582,13 +577,13 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 127, ../sass/_main.scss */
+/* line 124, ../sass/_main.scss */
 .mainheader__mainnav {
   font-size: 1.125em;
   display: inline-block;
 }
 @media all and (min-width: 30em) {
-  /* line 127, ../sass/_main.scss */
+  /* line 124, ../sass/_main.scss */
   .mainheader__mainnav {
     text-align: right;
     width: 68.25397%;
@@ -598,7 +593,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 138, ../sass/_main.scss */
+/* line 135, ../sass/_main.scss */
 .mainfooter {
   background: #585858;
   color: white;
@@ -606,80 +601,80 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   overflow: hidden;
 }
 @media all and (min-width: 30em) {
-  /* line 138, ../sass/_main.scss */
+  /* line 135, ../sass/_main.scss */
   .mainfooter {
     padding-left: 2%;
     padding-right: 2%;
   }
 }
-/* line 149, ../sass/_main.scss */
+/* line 146, ../sass/_main.scss */
 .mainfooter a {
   color: inherit;
 }
 @media all and (min-width: 90em) {
-  /* line 138, ../sass/_main.scss */
+  /* line 135, ../sass/_main.scss */
   .mainfooter {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 159, ../sass/_main.scss */
+/* line 156, ../sass/_main.scss */
 .mainfooter__in {
   overflow: hidden;
 }
 
-/* line 164, ../sass/_main.scss */
+/* line 161, ../sass/_main.scss */
 .mainfooter__text {
   float: right;
   font-size: 0.875em;
 }
 
-/* line 169, ../sass/_main.scss */
+/* line 166, ../sass/_main.scss */
 .mainfooter__links {
   float: left;
   font-size: 0.875em;
 }
 
-/* line 174, ../sass/_main.scss */
+/* line 171, ../sass/_main.scss */
 .mainfooter__link {
   display: inline-block;
   margin-right: 1.2em;
 }
 
 /* Main navigation */
-/* line 184, ../sass/_main.scss */
+/* line 181, ../sass/_main.scss */
 .mainnav__item {
   display: inline-block;
   margin: 0 .3em;
   vertical-align: middle;
 }
 
-/* line 194, ../sass/_main.scss */
+/* line 191, ../sass/_main.scss */
 .mainnav__item__special {
   background: #ffa900;
   margin: .2em 0;
   -webkit-transition: -webkit-transform .16s;
           transition: transform .16s;
 }
-/* line 199, ../sass/_main.scss */
+/* line 196, ../sass/_main.scss */
 .mainnav__item__special:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 203, ../sass/_main.scss */
+/* line 200, ../sass/_main.scss */
 .mainnav__item__special a {
   color: white;
   padding: .2em .5em;
 }
-/* line 207, ../sass/_main.scss */
+/* line 204, ../sass/_main.scss */
 .mainnav__item__special a:before {
   content: normal;
 }
 
 @media all and (min-width: 30em) {
-  /* line 213, ../sass/_main.scss */
+  /* line 210, ../sass/_main.scss */
   .mainarea {
     padding-top: 8%;
     margin-top: 5em;
@@ -687,7 +682,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
 }
 
 /* Hero */
-/* line 221, ../sass/_main.scss */
+/* line 218, ../sass/_main.scss */
 .hero {
   width: 100%;
   float: left;
@@ -697,7 +692,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   padding-bottom: 3em;
 }
 
-/* line 227, ../sass/_main.scss */
+/* line 224, ../sass/_main.scss */
 .hero__main {
   font-size: 2.25em;
   line-height: 1.15;
@@ -706,11 +701,11 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   text-align: center;
   margin: 0 auto -.1em;
 }
-/* line 235, ../sass/_main.scss */
+/* line 232, ../sass/_main.scss */
 .hero__main span {
   display: none;
 }
-/* line 239, ../sass/_main.scss */
+/* line 236, ../sass/_main.scss */
 .hero__main:after {
   content: "";
   width: .08em;
@@ -726,38 +721,38 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   margin: 0 .04em;
 }
 @media all and (min-width: 30em) {
-  /* line 227, ../sass/_main.scss */
+  /* line 224, ../sass/_main.scss */
   .hero__main {
     max-width: 81%;
   }
 }
 @media all and (min-width: 46em) {
-  /* line 227, ../sass/_main.scss */
+  /* line 224, ../sass/_main.scss */
   .hero__main {
     font-size: 3em;
     max-width: 70%;
   }
 }
 @media all and (min-width: 60em) {
-  /* line 227, ../sass/_main.scss */
+  /* line 224, ../sass/_main.scss */
   .hero__main {
     font-size: 3.75em;
   }
 }
 @media all and (min-width: 90em) {
-  /* line 227, ../sass/_main.scss */
+  /* line 224, ../sass/_main.scss */
   .hero__main {
     max-width: 47%;
   }
 }
 @media all and (min-width: 100em) {
-  /* line 227, ../sass/_main.scss */
+  /* line 224, ../sass/_main.scss */
   .hero__main {
     max-width: 52%;
   }
 }
 
-/* line 275, ../sass/_main.scss */
+/* line 272, ../sass/_main.scss */
 .hero__tagline {
   font-size: 1.125em;
   margin: 1em 0 1.9em;
@@ -765,7 +760,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   position: relative;
   display: inline-block;
 }
-/* line 282, ../sass/_main.scss */
+/* line 279, ../sass/_main.scss */
 .hero__tagline:before {
   content: "";
   position: absolute;
@@ -777,14 +772,14 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   background: #3085ff;
 }
 @media all and (min-width: 60em) {
-  /* line 275, ../sass/_main.scss */
+  /* line 272, ../sass/_main.scss */
   .hero__tagline {
     margin: 1.5em 20% 2.4em;
     padding-top: 1.9em;
   }
 }
 
-/* line 300, ../sass/_main.scss */
+/* line 297, ../sass/_main.scss */
 .hero__action {
   display: block;
   margin-bottom: 4em;
@@ -794,12 +789,12 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   margin-right: 0;
   font-size: 1.125em;
 }
-/* line 306, ../sass/_main.scss */
+/* line 303, ../sass/_main.scss */
 .hero__action:visited {
   color: white;
 }
 @media all and (min-width: 30em) {
-  /* line 300, ../sass/_main.scss */
+  /* line 297, ../sass/_main.scss */
   .hero__action {
     width: 36.50794%;
     float: left;
@@ -809,7 +804,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 46em) {
-  /* line 300, ../sass/_main.scss */
+  /* line 297, ../sass/_main.scss */
   .hero__action {
     width: 23.80952%;
     float: left;
@@ -818,13 +813,13 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 60em) {
-  /* line 300, ../sass/_main.scss */
+  /* line 297, ../sass/_main.scss */
   .hero__action {
     font-size: 1.3125em;
   }
 }
 
-/* line 326, ../sass/_main.scss */
+/* line 323, ../sass/_main.scss */
 .hero__screenshot {
   width: 100%;
   float: left;
@@ -835,7 +830,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
 }
 
 /* Features */
-/* line 333, ../sass/_main.scss */
+/* line 330, ../sass/_main.scss */
 .features {
   clear: both;
   background: #E6E6E6;
@@ -844,14 +839,14 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   overflow: hidden;
 }
 
-/* line 341, ../sass/_main.scss */
+/* line 338, ../sass/_main.scss */
 .features__list {
   list-style: none;
   text-align: center;
   margin: 0;
 }
 @media all and (min-width: 90em) {
-  /* line 341, ../sass/_main.scss */
+  /* line 338, ../sass/_main.scss */
   .features__list {
     margin-left: 6.34921%;
     width: 87.30159%;
@@ -860,25 +855,25 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 352, ../sass/_main.scss */
+/* line 349, ../sass/_main.scss */
 .features__item {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 1.9em;
 }
-/* line 358, ../sass/_main.scss */
+/* line 355, ../sass/_main.scss */
 .features__item:nth-child(3) {
   margin-bottom: 0;
 }
 @media all and (min-width: 46em) {
-  /* line 352, ../sass/_main.scss */
+  /* line 349, ../sass/_main.scss */
   .features__item {
     width: 33.33333%;
     margin-bottom: 0;
   }
 }
 
-/* line 368, ../sass/_main.scss */
+/* line 365, ../sass/_main.scss */
 .features__title {
   font-size: 1.3125em;
   color: #3085ff;
@@ -887,14 +882,14 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   vertical-align: middle;
 }
 @media all and (min-width: 46em) {
-  /* line 368, ../sass/_main.scss */
+  /* line 365, ../sass/_main.scss */
   .features__title {
     font-size: 1.5em;
     display: block;
   }
 }
 
-/* line 382, ../sass/_main.scss */
+/* line 379, ../sass/_main.scss */
 .features__img {
   display: inline-block;
   max-width: 3em;
@@ -903,7 +898,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   vertical-align: middle;
 }
 @media all and (min-width: 46em) {
-  /* line 382, ../sass/_main.scss */
+  /* line 379, ../sass/_main.scss */
   .features__img {
     max-width: 100%;
     height: auto;
@@ -914,26 +909,26 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 60em) {
-  /* line 382, ../sass/_main.scss */
+  /* line 379, ../sass/_main.scss */
   .features__img {
     height: 10em;
   }
 }
 
-/* line 404, ../sass/_main.scss */
+/* line 401, ../sass/_main.scss */
 .features__text {
   margin: .4em 0 0;
   max-width: 22em;
 }
 @media all and (min-width: 30em) {
-  /* line 404, ../sass/_main.scss */
+  /* line 401, ../sass/_main.scss */
   .features__text {
     max-width: 17em;
     padding: 0 2em;
   }
 }
 @media all and (min-width: 46em) {
-  /* line 404, ../sass/_main.scss */
+  /* line 401, ../sass/_main.scss */
   .features__text {
     max-width: 84%;
     display: inline-block;
@@ -941,12 +936,12 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
 }
 
 /* Works */
-/* line 420, ../sass/_main.scss */
+/* line 417, ../sass/_main.scss */
 .works {
   overflow: hidden;
 }
 @media all and (min-width: 90em) {
-  /* line 423, ../sass/_main.scss */
+  /* line 420, ../sass/_main.scss */
   .works .container__in__in {
     margin-left: 6.34921%;
     width: 87.30159%;
@@ -955,12 +950,12 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 433, ../sass/_main.scss */
+/* line 430, ../sass/_main.scss */
 .works--left .works__item__three:before {
   counter-increment: li +3;
 }
 @media all and (min-width: 46em) {
-  /* line 439, ../sass/_main.scss */
+  /* line 436, ../sass/_main.scss */
   .works--left .works__screen {
     margin-left: 6.34921%;
     width: 49.20635%;
@@ -969,7 +964,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 90em) {
-  /* line 439, ../sass/_main.scss */
+  /* line 436, ../sass/_main.scss */
   .works--left .works__screen {
     margin-left: 6.34921%;
     width: 49.09091%;
@@ -979,17 +974,17 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
 }
 
 @media all and (min-width: 46em) {
-  /* line 453, ../sass/_main.scss */
+  /* line 450, ../sass/_main.scss */
   .works--right .works__item {
     padding-left: 0;
   }
-  /* line 457, ../sass/_main.scss */
+  /* line 454, ../sass/_main.scss */
   .works--right .works__item:before {
     left: -2.2em;
   }
 }
 @media all and (min-width: 46em) {
-  /* line 463, ../sass/_main.scss */
+  /* line 460, ../sass/_main.scss */
   .works--right .works__content {
     margin-left: 6.34921%;
     width: 42.85714%;
@@ -998,7 +993,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 90em) {
-  /* line 463, ../sass/_main.scss */
+  /* line 460, ../sass/_main.scss */
   .works--right .works__content {
     margin-left: 7.27273%;
     width: 41.81818%;
@@ -1007,13 +1002,13 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 477, ../sass/_main.scss */
+/* line 474, ../sass/_main.scss */
 .works__content {
   display: inline-block;
   vertical-align: top;
 }
 @media all and (min-width: 46em) {
-  /* line 477, ../sass/_main.scss */
+  /* line 474, ../sass/_main.scss */
   .works__content {
     width: 42.85714%;
     float: left;
@@ -1021,7 +1016,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 90em) {
-  /* line 477, ../sass/_main.scss */
+  /* line 474, ../sass/_main.scss */
   .works__content {
     width: 41.81818%;
     float: left;
@@ -1029,14 +1024,14 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 490, ../sass/_main.scss */
+/* line 487, ../sass/_main.scss */
 .works__screen {
   position: relative;
   margin-top: 2em;
   vertical-align: top;
 }
 @media all and (min-width: 46em) {
-  /* line 490, ../sass/_main.scss */
+  /* line 487, ../sass/_main.scss */
   .works__screen {
     width: 49.20635%;
     float: left;
@@ -1045,7 +1040,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 90em) {
-  /* line 490, ../sass/_main.scss */
+  /* line 487, ../sass/_main.scss */
   .works__screen {
     width: 49.09091%;
     float: left;
@@ -1053,7 +1048,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 505, ../sass/_main.scss */
+/* line 502, ../sass/_main.scss */
 .works__features {
   color: #3085ff;
   list-style: none;
@@ -1062,13 +1057,13 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   margin: 0;
 }
 
-/* line 513, ../sass/_main.scss */
+/* line 510, ../sass/_main.scss */
 .works__item {
   margin-top: 1.6em;
   position: relative;
   padding-left: 2.34em;
 }
-/* line 519, ../sass/_main.scss */
+/* line 516, ../sass/_main.scss */
 .works__item:before {
   content: counter(li);
   counter-increment: li;
@@ -1086,48 +1081,48 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   font-size: 1.1em;
 }
 @media all and (min-width: 90em) {
-  /* line 513, ../sass/_main.scss */
+  /* line 510, ../sass/_main.scss */
   .works__item {
     padding-left: 0;
   }
-  /* line 538, ../sass/_main.scss */
+  /* line 535, ../sass/_main.scss */
   .works__item:before {
     left: -2.2em;
   }
 }
 
-/* line 544, ../sass/_main.scss */
+/* line 541, ../sass/_main.scss */
 .works__text {
   margin-top: 0;
 }
 
-/* line 548, ../sass/_main.scss */
+/* line 545, ../sass/_main.scss */
 .works__screen__in {
   opacity: .5;
 }
 
-/* line 552, ../sass/_main.scss */
+/* line 549, ../sass/_main.scss */
 .works__screen__m1 {
   position: absolute;
   top: 27%;
   left: 4%;
 }
 
-/* line 556, ../sass/_main.scss */
+/* line 553, ../sass/_main.scss */
 .works__screen__m2 {
   position: absolute;
   top: 19%;
   right: 20%;
 }
 
-/* line 560, ../sass/_main.scss */
+/* line 557, ../sass/_main.scss */
 .works__screen__m3 {
   position: absolute;
   top: 27%;
   left: 55%;
 }
 
-/* line 564, ../sass/_main.scss */
+/* line 561, ../sass/_main.scss */
 .works__screen__m4 {
   position: absolute;
   bottom: 9%;
@@ -1135,7 +1130,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
 }
 
 /* User testimonials */
-/* line 569, ../sass/_main.scss */
+/* line 566, ../sass/_main.scss */
 .users {
   background: #3085ff;
   background-image: -webkit-radial-gradient(50% 175%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
@@ -1143,7 +1138,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   overflow: hidden;
 }
 @media all and (min-width: 90em) {
-  /* line 574, ../sass/_main.scss */
+  /* line 571, ../sass/_main.scss */
   .users .container__in__in {
     margin-left: 6.34921%;
     width: 87.30159%;
@@ -1152,29 +1147,29 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 582, ../sass/_main.scss */
+/* line 579, ../sass/_main.scss */
 .users__item {
   margin: 0;
   color: white;
 }
-/* line 586, ../sass/_main.scss */
+/* line 583, ../sass/_main.scss */
 .users__item + .users__item {
   margin: 1.4em 0 0;
 }
 @media all and (min-width: 46em) {
-  /* line 582, ../sass/_main.scss */
+  /* line 579, ../sass/_main.scss */
   .users__item {
     width: 49.20635%;
     float: left;
     margin-right: 1.5873%;
   }
-  /* line 593, ../sass/_main.scss */
+  /* line 590, ../sass/_main.scss */
   .users__item + .users__item {
     margin-top: 0;
   }
 }
 @media all and (min-width: 90em) {
-  /* line 582, ../sass/_main.scss */
+  /* line 579, ../sass/_main.scss */
   .users__item {
     width: 49.09091%;
     float: left;
@@ -1182,37 +1177,37 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 603, ../sass/_main.scss */
+/* line 600, ../sass/_main.scss */
 .users__title {
   color: white;
   line-spacing: 1px;
 }
 
-/* line 608, ../sass/_main.scss */
+/* line 605, ../sass/_main.scss */
 .users__photo {
   text-align: center;
   display: inline-block;
   width: 16%;
   vertical-align: middle;
 }
-/* line 614, ../sass/_main.scss */
+/* line 611, ../sass/_main.scss */
 .users__photo img {
   border-radius: 50%;
 }
 @media all and (min-width: 46em) {
-  /* line 608, ../sass/_main.scss */
+  /* line 605, ../sass/_main.scss */
   .users__photo {
     width: 22.58065%;
   }
 }
 @media all and (min-width: 90em) {
-  /* line 608, ../sass/_main.scss */
+  /* line 605, ../sass/_main.scss */
   .users__photo {
     width: 25.92593%;
   }
 }
 
-/* line 627, ../sass/_main.scss */
+/* line 624, ../sass/_main.scss */
 .users__text {
   display: inline-block;
   width: 81%;
@@ -1221,7 +1216,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   max-width: 30em;
 }
 @media all and (min-width: 30em) {
-  /* line 627, ../sass/_main.scss */
+  /* line 624, ../sass/_main.scss */
   .users__text {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAWCAMAAAALimf+AAAA51BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9aq4iyAAAATXRSTlMAAQIDBAUGCQoLDA0ODxAREhMUFhcZGhweIyQmJygpKiwvMDIzNDc6Oz5AREVHSEpLTE1OT1BSVFhZWlxdYGFiY2VmaGlqa2xtb3Bxcp+6a7UAAAD6SURBVBgZhcFpOwIBGIbRp5iibNmXsSTFkCWJQtJiqe7//3u8pnnn8s05ckF0oz8yJ+2cUgcDKCu10YGGEkET85xVojYFPlYUy3cw0ZxmMleYx4Jiyz3gc1eJ+SamqpmgB/RLcrfAOFSiDnyvyIWYQyVWMady2XfgXq4OdDNyIaYoNwIipRrAi9w65lSpIdCUCzFncguYllwZ89ToDx+WZNYwg8vuZ3tXpoYb5iRt4abbko5JVSUVSD1K2iR1J/OFG0nKvuHuZOq4ocwBriJTHJNoyWSumenl9OtkQmyyoVhlinktaWZnhBntK7FYjs73snJBeBEd5fWvH75ATiBSf5S0AAAAAElFTkSuQmCCMfzkT3xxPl+/9fa70+nk1q1bRFxKdncivnXr1f1rO1oykGnJZkZEVhQQicjdNyBtLtkdX4TQ0wrjSRm6BOnyA66C5O4IiBcPiQm//W9+/1KGvi9C6oZ2fgZEtNFIG0XxlAw9hcGVR/S8gwiOSE9dG6I3IfKq777yp3/627/129/4xjdTwmymADd3qp/8iR/NZSCi6zduzs+WB48eXr9+fXdvRwIvFqdvfPsv3bSN1XS88+j4uORSt9X27m4/6Ne//sat269MJvXp6dl63R8dHzPB9ev7keSHfviH/rP/9K//yI/+SF1Vw1DcAQmeufcBEQ2ed6VAz9FygOhPw7NB82nM3MEd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') 0 0 no-repeat;
     background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyOSAyMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+PHRpdGxlPuKAnDwvdGl0bGU+PGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+PHBhdGggZD0iTTI3LjM2NyAyLjQyMmMtLjk1Ny42MjktMS44NDYgMS4yNDQtMi42NjYgMS44NDYtLjgyLjYwMi0xLjUzMSAxLjIzLTIuMTMzIDEuODg3LS42MDIuNjU2LTEuMDczIDEuMzY3LTEuNDE1IDIuMTMzLS4zNDIuNzY2LS41MTMgMS42NDEtLjUxMyAyLjYyNSAwIC4zMDEuMDI3LjU5NS4wODIuODgyLjA1NS4yODcuMTIzLjU5NS4yMDUuOTIzLjE2NC0uMTM3LjQ3OS0uMjg3Ljk0My0uNDUxLjQ2NS0uMTY0Ljk3MS0uMjQ2IDEuNTE4LS4yNDYgMS4xNzYgMCAyLjA3MS4zOTYgMi42ODcgMS4xODkuNjE1Ljc5My45MjMgMS43NS45MjMgMi44NzEgMCAuNjI5LS4xMjMgMS4yMTctLjM2OSAxLjc2NC0uMjQ2LjU0Ny0uNTg4IDEuMDI1LTEuMDI1IDEuNDM2LS40MzguNDEtLjkzNy43MzEtMS40OTcuOTY0LS41NjEuMjMyLTEuMTY5LjM0OS0xLjgyNS4zNDktMS4xMjEgMC0yLjA5Mi0uMjE5LTIuOTEyLS42NTYtLjgyLS40MzgtMS40OTctLjk5MS0yLjAzLTEuNjYxLS41MzMtLjY3LS45My0xLjQxNS0xLjE4OS0yLjIzNS0uMjYtLjgyLS4zOS0xLjYxMy0uMzktMi4zNzkgMC0xLjg4Ny4yNi0zLjUyNy43NzktNC45MjIuNTItMS4zOTUgMS4yMy0yLjYyNSAyLjEzMy0zLjY5MS45MDItMS4wNjYgMS45NDEtMS45OTYgMy4xMTctMi43ODkgMS4xNzYtLjc5MyAyLjQyLTEuNTQ1IDMuNzMyLTIuMjU2bDEuODQ2IDIuNDJ6bS0xNS4yNTggMGMtLjk1Ny42MjktMS44NDYgMS4yNDQtMi42NjYgMS44NDYtLjgyLjYwMi0xLjUzMSAxLjIzLTIuMTMzIDEuODg3LS42MDIuNjU2LTEuMDczIDEuMzY3LTEuNDE1IDIuMTMzLS4zNDIuNzY2LS41MTMgMS42NDEtLjUxMyAyLjYyNSAwIC4zMDEuMDI3LjU5NS4wODIuODgyLjA1NS4yODcuMTIzLjU5NS4yMDUuOTIzLjE2NC0uMTM3LjQ3OS0uMjg3Ljk0My0uNDUxLjQ2NS0uMTY0Ljk3MS0uMjQ2IDEuNTE4LS4yNDYgMS4xNzYgMCAyLjA3MS4zOTYgMi42ODcgMS4xODkuNjE1Ljc5My45MjMgMS43NS45MjMgMi44NzEgMCAuNjI5LS4xMjMgMS4yMTctLjM2OSAxLjc2NC0uMjQ2LjU0Ny0uNTg4IDEuMDI1LTEuMDI1IDEuNDM2LS40MzguNDEtLjkzNy43MzEtMS40OTcuOTY0LS41NjEuMjMyLTEuMTY5LjM0OS0xLjgyNS4zNDktMS4xMjEgMC0yLjA5Mi0uMjE5LTIuOTEyLS42NTYtLjgyLS40MzgtMS40OTctLjk5MS0yLjAzLTEuNjYxLS41MzMtLjY3LS45My0xLjQxNS0xLjE4OS0yLjIzNS0uMjYtLjgyLS4zOS0xLjYxMy0uMzktMi4zNzkgMC0xLjg4Ny4yNi0zLjUyNy43NzktNC45MjIuNTItMS4zOTUgMS4yMy0yLjYyNSAyLjEzMy0zLjY5MS45MDItMS4wNjYgMS45NDEtMS45OTYgMy4xMTctMi43ODkgMS4xNzYtLjc5MyAyLjQyLTEuNTQ1IDMuNzMyLTIuMjU2bDEuODQ2IDIuNDJ6IiBpZD0icXVvdGUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii40NDgiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==') 0 0 no-repeat, none;
@@ -1230,13 +1225,13 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 46em) {
-  /* line 627, ../sass/_main.scss */
+  /* line 624, ../sass/_main.scss */
   .users__text {
     width: 72%;
   }
 }
 
-/* line 646, ../sass/_main.scss */
+/* line 643, ../sass/_main.scss */
 .users__info {
   display: block;
   font-size: 0.75em;
@@ -1246,7 +1241,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
 }
 
 /* Start */
-/* line 655, ../sass/_main.scss */
+/* line 652, ../sass/_main.scss */
 .start {
   background: #ffa900;
   background-image: -webkit-radial-gradient(50% 175%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
@@ -1255,7 +1250,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   overflow: hidden;
 }
 @media all and (min-width: 60em) {
-  /* line 661, ../sass/_main.scss */
+  /* line 658, ../sass/_main.scss */
   .start .container__in__in {
     margin-left: 12.69841%;
     width: 74.60317%;
@@ -1264,28 +1259,34 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 669, ../sass/_main.scss */
+/* line 666, ../sass/_main.scss */
 .start__fields {
   margin-top: 1.6em;
 }
 
-/* line 674, ../sass/_main.scss */
+/* line 671, ../sass/_main.scss */
 .start__title {
   color: white;
-  margin-bottom: .3em;
+  margin-bottom: .4em;
+}
+@media all and (min-width: 60em) {
+  /* line 671, ../sass/_main.scss */
+  .start__title {
+    margin-bottom: .2em;
+  }
 }
 
-/* line 679, ../sass/_main.scss */
+/* line 680, ../sass/_main.scss */
 .start__text {
   margin-top: 0;
 }
 
-/* line 683, ../sass/_main.scss */
+/* line 684, ../sass/_main.scss */
 .formrw {
   margin-bottom: 1.2em;
 }
 @media all and (min-width: 30em) {
-  /* line 683, ../sass/_main.scss */
+  /* line 684, ../sass/_main.scss */
   .formrw {
     width: 49.20635%;
     float: left;
@@ -1293,7 +1294,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 46em) {
-  /* line 683, ../sass/_main.scss */
+  /* line 684, ../sass/_main.scss */
   .formrw {
     width: 33.33333%;
     float: left;
@@ -1301,7 +1302,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 60em) {
-  /* line 683, ../sass/_main.scss */
+  /* line 684, ../sass/_main.scss */
   .formrw {
     width: 36.17021%;
     float: left;
@@ -1310,19 +1311,19 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
 }
 
 @media all and (min-width: 30em) {
-  /* line 699, ../sass/_main.scss */
+  /* line 700, ../sass/_main.scss */
   .start__email {
     margin-right: 0;
   }
 }
 
-/* line 705, ../sass/_main.scss */
+/* line 706, ../sass/_main.scss */
 .start__button {
   margin-top: 1.2em;
   clear: both;
 }
 @media all and (min-width: 46em) {
-  /* line 705, ../sass/_main.scss */
+  /* line 706, ../sass/_main.scss */
   .start__button {
     width: 30.15873%;
     float: right;
@@ -1332,7 +1333,7 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 @media all and (min-width: 60em) {
-  /* line 705, ../sass/_main.scss */
+  /* line 706, ../sass/_main.scss */
   .start__button {
     width: 23.40426%;
     float: right;
@@ -1340,73 +1341,73 @@ input[type=text]:focus, input[type=text]:active, input[type=email]:focus, input[
   }
 }
 
-/* line 720, ../sass/_main.scss */
+/* line 721, ../sass/_main.scss */
 .start__button__in {
   width: 100%;
   background: #FF8B00;
 }
 
-/* line 725, ../sass/_main.scss */
+/* line 726, ../sass/_main.scss */
 .start__follow {
   border-top: 1px solid rgba(255, 255, 255, 0.39);
   margin-top: 2em;
   padding-top: .8em;
 }
 
-/* line 731, ../sass/_main.scss */
+/* line 732, ../sass/_main.scss */
 .start__follow__text {
   display: inline-block;
   vertical-align: middle;
   margin: .4em .5em .4em 0;
 }
 
-/* line 737, ../sass/_main.scss */
+/* line 738, ../sass/_main.scss */
 .start__follow__social {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
 }
 
-/* line 743, ../sass/_main.scss */
+/* line 744, ../sass/_main.scss */
 .start__follow__item {
   display: inline-block;
 }
-/* line 746, ../sass/_main.scss */
+/* line 747, ../sass/_main.scss */
 .start__follow__item a {
   display: block;
 }
-/* line 750, ../sass/_main.scss */
+/* line 751, ../sass/_main.scss */
 .start__follow__item + .start__follow__item {
   margin-left: .5em;
 }
 
-/* line 755, ../sass/_main.scss */
+/* line 756, ../sass/_main.scss */
 .start__follow__icon {
   display: block;
 }
 
-/* line 760, ../sass/_main.scss */
+/* line 761, ../sass/_main.scss */
 .ws-po-box {
   background: red;
   border-color: red;
   color: #fff;
 }
 
-/* line 766, ../sass/_main.scss */
+/* line 767, ../sass/_main.scss */
 .ws-po-arrow {
   border-bottom-color: red;
 }
-/* line 769, ../sass/_main.scss */
+/* line 770, ../sass/_main.scss */
 .ws-po-arrow .ws-po-arrowbox {
   border-bottom-color: inherit;
 }
 
-/* line 775, ../sass/_main.scss */
+/* line 776, ../sass/_main.scss */
 .user-error {
   border: 1px solid red;
 }
 
-/* line 779, ../sass/_main.scss */
+/* line 780, ../sass/_main.scss */
 .user-success {
   border: 1px solid green;
 }

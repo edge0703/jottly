@@ -8,7 +8,7 @@
 		<div class="container__in">
 			<h1 class="hero__main">The easier way to write and collaborate</h1>
 			<p class="hero__tagline">Edit, post and share content with your peers in a simple way.</p>
-			<a href="#start" class="action-btn hero__action">Get started</a>
+			<a href="#start" class="action-btn hero__action" data-start>Get started</a>
 		</div>
 	</div>	
 

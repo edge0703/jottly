@@ -20,9 +20,10 @@ var scroll = {
 	},
 
 	registerEventHandlers: function() {
-		$('.action-btn, .mainnav__start').on('click', function(e) {
+		$('[data-start]').on('click', function(e) {
 			var pos = $('.start').offset().top;
 		    $('html,body').animate({scrollTop: pos}, 750);
+		    $('#start__name').focus();
 		    e.preventDefault();
 		});
 	},
@@ -31,10 +32,6 @@ var scroll = {
 var logo = {
 	init: function() {
 		logo.registerEventHandlers(); 
-		// $('#logosel').hide();
-		// document.getElementById('logosel').setAttribute('display', 'none');
-		// document.getElementById('logosel').setAttribute('display', 'none');
-		// $('#svgstore46cf7ac42ac6a1ded4f355f66645fd1bFill-1').hide();
 	},
 
 	registerEventHandlers: function() {

@@ -38,6 +38,7 @@ input[type=text], input[type=email] {
 	height: $input-height;
 	padding: 0 .6em;
 	width: 100%;
+	border-radius: 0;
 
 	&:focus, &:active {
 		outline: 0;
@@ -75,11 +76,7 @@ input[type=text], input[type=email] {
 .container__title {
 	color: $blue;
 	margin: 0 0 .8em;
-	font-size: $scale2;
-
-	@include media-query(small) {
-		font-size: $scale3;
-	}
+	font-size: $scale3;
 
 	@include media-query(large) {
 		font-size: $scale45;
@@ -673,7 +670,11 @@ input[type=text], input[type=email] {
 
 .start__title {
 	color: $white;
-	margin-bottom: .3em;
+	margin-bottom: .4em;
+
+	@include media-query(large) {
+		margin-bottom: .2em;
+	}
 }
 
 .start__text {
